@@ -16,7 +16,7 @@ html, body {
 form { display: inline-block; }
 /* 15px right, 5px left */
 input { padding: 4px 15px 4px 5px; }
-#button {
+.button {
   display: inline-block;
   background-color: #b66869;
   color: #222222;
@@ -25,7 +25,7 @@ input { padding: 4px 15px 4px 5px; }
   margin-top: 2px;
   padding: 5px 15px;
 }
-#button:hover {
+.button:hover {
   cursor: pointer;
   opacity: .8;
 }
@@ -35,7 +35,6 @@ ol li { padding: 5px; color: #cbcbcb; }
 ol li:nth-child(even) { background: #3b3b3b;}
 .strike { text-decoration: line-through;}
 li:hover{ cursor: pointer; }
-.delete {	display: none; }
 /* direct children of list items  with the tag name "crossOutButton" */
 li > crossOutButton {
 	background: none;
