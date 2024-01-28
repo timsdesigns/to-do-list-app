@@ -8,12 +8,14 @@
 </head>
 <body>
   <div class="container">
-    <h2>To Do List App</h2>
-    <p><em>Double click to mark an item off, click on "X" to delete an item, and drag items to reorder.</em></p>
+    <h2>To Do List</h2>
+    <p><em>Enter to add, double click on resolved, remove with X, and drag to reorder.</em></p>
     <form name="toDoList">
       <input type="text" name="ListItem" id="input" />
     </form>
-    <div onclick="newItem()" id="button">Add</div><br />
+    <div tabindex="-1" class="button" id="addBtn">Add</div><br/>
+    <div tabindex="0" class="button" id="copyBtn">Copy List</div>
+    <div tabindex="0" class="button" id="clearBtn">Clear List</div><br/>
     <ol id="list"></ol>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
